@@ -1,7 +1,7 @@
-export interface IBlog{
-    id:number,
+export interface IBlog {
+    id: number,
     postedBy: string,
-    topic:string,
+    topic: string,
     date: Date,
-    message:string
+    message: string
 }

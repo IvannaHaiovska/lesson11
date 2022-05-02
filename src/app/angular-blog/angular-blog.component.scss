@@ -1,0 +1,301 @@
+//  header 
+.header {
+  background-color: rgba(73, 73, 73, 0.904);
+  height: 70px;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo h2 {
+  font-weight: normal;
+}
+
+.nameUser {
+  height: 80px;
+  outline: none;
+  border: none;
+  font-size: 1.1em;
+  padding: 10px;
+  margin-top: -2px;
+  background-color: rgb(230, 168, 53);
+  border: 3px solid rgb(230, 168, 53);
+
+}
+
+.signIn,
+.signUp,
+.addPost,
+.logOut {
+  height: 40px;
+  outline: none;
+  border: 3px solid rgb(30, 139, 30);
+  border-radius: 0.3em;
+  font-size: 1.1em;
+  color: rgb(30, 139, 30);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.signIn:hover,
+.addPost:hover {
+  background-color: rgb(30, 139, 30);
+  color: white;
+}
+
+.addPost {
+  border-bottom-right-radius: 0%;
+  border-top-right-radius: 0%;
+}
+
+.signUp {
+  border: 3px solid rgb(16, 85, 214);
+  color: rgb(16, 85, 214);
+}
+
+.signUp:hover {
+  background-color: rgb(16, 85, 214);
+  color: white;
+}
+
+.logOut {
+  border: 3px solid rgb(230, 168, 53);
+  color: rgb(230, 168, 53);
+  margin-left: 5px;
+}
+
+.logOut:hover {
+  background-color: rgb(230, 168, 53);
+  color: black;
+}
+
+// Post info 
+.blogInfo {
+  width: 85%;
+  margin: 10px auto;
+  border-radius: 0.3em;
+  border: 2px solid rgb(152, 151, 151);
+  font-family: sans-serif;
+  padding: 20px;
+  position: relative;
+  background-color: rgb(222 222 222 / 90%);
+}
+
+.name {
+  font-size: 1.5em;
+  font-weight: 550;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  margin: 5px 0;
+}
+
+.author {
+  margin: 7px 0;
+  color: gray;
+  font-size: 1.1em;
+  font-weight: 550;
+}
+
+.fa-clock {
+  margin-right: 5px;
+}
+
+.description {
+  font-size: 1.2em;
+}
+
+.btnBlog {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.edit,
+.delete {
+  margin-left: 0;
+  color: black;
+  background-color: orange;
+  border: none;
+  width: 60px;
+  height: 35px;
+  border-radius: .3em;
+
+}
+
+.delete {
+  color: white;
+  background-color: rgb(235, 19, 19);
+  margin-left: 5px;
+}
+
+.edit:hover {
+  background-color: rgb(240, 158, 6);
+}
+
+.delete:hover {
+  background-color: rgb(196, 0, 0);
+}
+
+//  Modal form for sign up and sign in user
+.logUser {
+  width: 85%;
+  background-color: rgb(255 57 57 / 39%);
+  color: #700b0b;
+  font-size: 1.1em;
+  padding: 5px;
+  margin: -9px auto;
+  text-align: center;
+}
+
+.logInPassword {
+  margin-top: 2px;
+}
+
+input {
+  width: 81.7%;
+  height: 37px;
+  border-radius: 0.3em;
+  outline: none;
+  border: 2px solid rgb(221, 221, 221);
+  margin: 15px 10px 20px 0;
+  font-size: 1em;
+  padding-left: 15px;
+}
+
+.sex {
+  display: flex;
+  justify-content: center;
+}
+
+.sex input[type="radio"] {
+  height: 18px;
+  width: 18px;
+  margin: 13px 6px;
+}
+
+.sex label {
+  margin: 10px 60px 0 0;
+}
+
+.submitIn,
+.submitUp,
+.post,
+.clear {
+  width: 15%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 0.3em;
+  font-size: 1.1em;
+  color: rgb(255, 255, 255);
+  margin: 20px 10px;
+  background-color: rgba(21, 124, 21, 0.856);
+}
+
+.submitIn:hover {
+  background-color: rgba(16, 100, 16, 0.856);
+}
+
+.submitUp {
+  background-color: rgba(35, 120, 231, 0.959);
+}
+
+.post:hover {
+  background-color: rgba(16, 95, 16, 0.856);
+}
+
+.post:disabled {
+  background-color: rgba(16, 95, 16, 0.612);
+}
+
+.submitUp:hover {
+  background-color: rgba(27, 94, 182, 0.959);
+}
+
+.clear {
+  background-color: rgba(47, 47, 47, 0.674);
+}
+
+.clear:hover {
+  background-color: rgba(47, 47, 47, 0.388);
+}
+
+label {
+  color: rgb(46, 46, 46);
+  font-size: 1.2em;
+  margin: 20px 40px 0;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px lightskyblue;
+  border: 2px solid lightskyblue;
+}
+
+#SignIn,
+#SignUp {
+  position: absolute;
+  top: 10%;
+  left: 450px;
+  border: 1px solid rgba(0, 0, 0, 0.829);
+  border-radius: .2em;
+  background-color: #fff;
+  width: 40%;
+  overflow: auto;
+  font-family: sans-serif;
+  z-index: 10;
+
+}
+
+.AddPost {
+  width: 70%;
+  margin: 20px auto;
+}
+
+.header-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 20px;
+  color: rgba(0, 0, 0, 0.808);
+  border-bottom: 2px solid rgb(221, 221, 221);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.body input {
+  margin: 10px 0 10px 35px;
+  width: 85%;
+  color: rgba(48, 47, 47, 0.932);
+}
+
+.bottom {
+  border-top: 2px solid rgb(221, 221, 221);
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  height: 80px;
+}
+
+textarea {
+  width: 84%;
+  height: 100px;
+  border-radius: 0.3em;
+  outline: none;
+  border: 2px solid rgb(221, 221, 221);
+  margin: 15px 10px 20px 40px;
+  font-size: 1.4em;
+  padding: 10px 0 0 15px;
+}
